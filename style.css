@@ -1,0 +1,81 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffd000;
+	color: black;
+  min-height:  10vh;
+	display:  flex;
+  align-items: center;
+  justify-content:  center;
+}
+
+div{
+  position:  absolute;
+  top: 20px;
+}
+
+.card{
+  width:  900px;
+  height: 600px;
+  position:  relative;
+  perspective: 2000px;
+}
+
+.card img, .card div {
+  backface-visibility: hidden;
+  transition: transform 2s;
+}
+
+.card div {
+  /* background-color: #ffd000; */
+  color: black; 
+  background-image: url(white.jpg);
+  
+  position:  absolute;
+  top: 0px;
+  left: 0;
+  width:  900px;
+  height: 600px;
+  z-index: 1;
+  /* à enlever après */
+  padding: 5px;
+  font-size: 10px;
+  font-family: Work Sans;
+  
+  transform:  rotateY(180deg);
+}
+
+
+
+.card:hover img {
+  transform: rotateY(180deg);
+}
+
+
+.card:hover div {
+  transform: rotateY(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
